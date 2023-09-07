@@ -5,6 +5,7 @@ import re
 import json
 from datetime import datetime
 import shutil
+import os
 
 # Counter to keep track of the number of submissions
 submission_counter = 0
@@ -134,4 +135,6 @@ def get_json_data():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))  # Use the PORT environment variable provided by Heroku; default to 5000 for local development
+    app.run(host='0.0.0.0', port=port)
+
