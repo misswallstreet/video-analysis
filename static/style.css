@@ -1,0 +1,137 @@
+
+/* Basic Reset */
+* {
+    margin: 150;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and global settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;  /* Light vanilla background */
+}
+
+/* Main Content Wrapper */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;  /* White foreground */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #545863;
+}
+
+/* Title */
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #545863;
+    margin-bottom: 20px;
+}
+
+/* Form and its elements */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #545863;
+}
+
+/* Input Box */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #9191e9;
+    border-radius: 5px;
+    color: #545863;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"] {
+    background-color: #9191e9;
+    color: #fff;
+    float: right;
+}
+
+button[type="button"] {
+    background-color: #f61067;
+    color: #fff;
+    float: left;
+}
+
+/* Button Hover Effects */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Clear Floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Mobile Responsiveness */
+
+@media screen and (max-width: 768px) {
+    /* Make the main content wrapper full width */
+    .main-content {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    /* Adjust title and form elements for better visibility */
+    h1 {
+        font-size: 1.5em;
+    }
+
+    label, input[type="text"], button {
+        font-size: 1em;
+    }
+}
+
+/* Transitions for smoother interactions */
+button, input[type="text"] {
+    transition: all 0.3s ease;
+}
+
+/* Footer Link */
+footer a {
+    color: #545863;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Accessibility: Focus styles */
+input[type="text"]:focus, button:focus {
+    outline: 2px solid #9191e9;
+}
+
+/* Max-width for Text */
+p, label {
+    max-width: 800px;
+}
+
+/* Comments */
+/* This CSS file was generated with love and attention to detail. */

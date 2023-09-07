@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>YouTube Channel ID Finder</title>
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <div class="main-content">
+    <h1>Find YouTube Channel ID</h1>
+    <form id="urlForm">
+        <label for="url">Enter YouTube URL:</label>
+        <input type="text" id="url" name="url">
+        <button type="submit">Find Channel ID</button>
+    </form>
+    <div id="result"></div>
+    <div id="confirmation"></div>
+
+    <!-- Message to show when the maximum number of submissions is reached -->
+    <div id="max-submissions-message" style="display:none;">
+        <p>Maximum number of submissions reached. You can now download the JSON file.</p>
+    </div>
+
+    <!-- Button to stop and download -->
+    <button id="stop-and-download" style="display:none;">Stop and Download</button>
+
+    <!-- Button to download the JSON file -->
+    <button id="download-json" style="display:none;">Download JSON</button>
+
+    </div>
+    <footer>Made with 💜 in Atlanta by <a href="https://LatishaStyles.com">LaTisha</a></footer>
+</body>
+</html>
