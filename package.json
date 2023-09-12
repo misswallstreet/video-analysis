@@ -1,0 +1,1 @@
+"vercel-build": "npm run build:ssr"
